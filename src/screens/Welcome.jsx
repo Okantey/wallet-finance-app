@@ -1,8 +1,9 @@
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Text, Image, View } from "react-native";
-import { Intro, Proceed, Skip } from "../components";
+import { Image, View, TouchableOpacity } from "react-native";
+import { Intro } from "../components";
 import lock from "../../assets/logos/lock.png";
 import { styles } from "../../global.colors";
+import { Ionicons } from "@expo/vector-icons";
 
 export default Welcome = ({ navigation }) => {
   return (
@@ -16,7 +17,13 @@ export default Welcome = ({ navigation }) => {
         color={styles.colors.white}
       />
       <View className="w-full flex flex-row justify-center items-center mt-20">
-        <Proceed name="NEXT" />
+        <TouchableOpacity className="flex justify-center items-center w-20 h-20 bg-white rounded-full shadow-2xl shadow-indigo-900">
+          <Ionicons
+            name="arrow-forward"
+            size={35}
+            color={styles.colors.primary}
+          />
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
