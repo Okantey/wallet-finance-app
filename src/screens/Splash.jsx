@@ -14,7 +14,10 @@ export default Splash = () => {
     setDisplay(true);
   }, 2000);
   return (
-    <SafeAreaView className="bg-primary flex-1 justify-center items-center">
+    <SafeAreaView
+      style={{ backgroundColor: styles.colors.primary }}
+      className="flex-1 justify-center items-center"
+    >
       <View className="w-full justify-center items-center px-6">
         <Image source={logo} />
         <Text

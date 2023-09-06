@@ -20,7 +20,10 @@ export default Welcome = ({ navigation }) => {
   };
 
   return (
-    <SafeAreaView className="px-8 flex-1 justify-center items-center bg-primary">
+    <SafeAreaView
+      style={{ backgroundColor: styles.colors.primary }}
+      className="px-8 flex-1 justify-center items-center"
+    >
       <Image source={lock} />
       <Intro
         name="Welcome"

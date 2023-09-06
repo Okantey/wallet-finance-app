@@ -6,6 +6,6 @@ export const styles = StyleSheet.create({
     secondary: "#7A7AFD",
     white: "#F8F9FB",
     gray: "#E9ECF1",
-    textPurple: "#3b0764"
+    textPurple: "#3b0764",
   }
 })
