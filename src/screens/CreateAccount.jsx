@@ -7,7 +7,6 @@ import { Button } from "../components";
 import { styles } from "../../global.colors";
 export default CreateAccount = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
-
   const handleVisibility = () => {
     setPasswordVisible(!passwordVisible);
   };
