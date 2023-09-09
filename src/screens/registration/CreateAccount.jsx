@@ -11,7 +11,7 @@ export default CreateAccount = ({ navigation }) => {
     setPasswordVisible(!passwordVisible);
   };
   return (
-    <SafeAreaView className="bg-white w-full flex-1 px-6 mt-6">
+    <SafeAreaView className="bg-white w-full flex-1 px-4 pt-2">
       <ScrollView
         showsVerticalScrollIndicator={false}
         className="w-full flex-1"

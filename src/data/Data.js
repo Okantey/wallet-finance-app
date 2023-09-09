@@ -3,8 +3,8 @@ import { FontAwesome } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import behance from "../../assets/logos/behance.png";
-import btc from "../../assets/logos/btc.png";
-import skrill from "../../assets/logos/skrill.jpg";
+import btc from "../../assets/logos/ether.jpeg";
+import skrill from "../../assets/logos/download.png";
 import uber from "../../assets/logos/uber.jpg";
 
 export const transactions = [
@@ -25,7 +25,7 @@ export const transactions = [
   {
     id: 3,
     logo: btc,
-    title: "BTC withdraws",
+    title: "Ethereum withdraws",
     date: "BDT account",
     amount: "$230",
   },

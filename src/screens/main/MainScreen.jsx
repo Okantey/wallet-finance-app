@@ -13,18 +13,18 @@ import { transactions, tabItems } from "../../data/Data";
 
 export default MainScreen = () => {
   return (
-    <SafeAreaView className="bg-white w-full flex-1 px-6 mt-2">
+    <SafeAreaView className="bg-white w-full flex-1 px-4 pt-2">
       <View className="w-full flex flex-row justify-between items-center">
-        <View className="bg-[#fff] rounded-xl p-4 shadow-sm shadow-[#fff]">
+        <TouchableOpacity className="bg-[#fff] rounded-xl p-4 shadow-sm shadow-[#fff]">
           <Octicons name="apps" size={30} color="black" />
-        </View>
-        <View className="bg-[#fff] rounded-xl p-4 shadow-sm shadow-[#fff]">
+        </TouchableOpacity>
+        <TouchableOpacity className="bg-[#fff] rounded-xl p-4 shadow-sm shadow-[#fff]">
           <MaterialCommunityIcons
             name="dots-horizontal"
             size={30}
             color="black"
           />
-        </View>
+        </TouchableOpacity>
       </View>
       <View className="my-4 bg-[#F5F6FA] relative p-10 rounded-lg flex justify-center items-center">
         <View className="absolute top-[-50%]">
@@ -50,7 +50,10 @@ export default MainScreen = () => {
           renderItem={({ item }) => (
             <TouchableOpacity className="flex justify-center items-center">
               <View className="bg-[#F4F5F9] p-4 rounded-full">{item.icon}</View>
-              <Text style={{ fontFamily: "inter-bold", color: "#151940" }}>
+              <Text
+                style={{ fontFamily: "inter-semibold", color: "#151940" }}
+                className="text-base"
+              >
                 {item.name}
               </Text>
             </TouchableOpacity>
@@ -108,11 +111,14 @@ export default MainScreen = () => {
                 <View>
                   <Image
                     source={data.logo}
-                    className="w-14 h-12 object-cover rounded-2xl mix-blend-darken"
+                    className="w-16 h-14 object-cover rounded-md bg-white mix-blend-color-burn"
                   />
                 </View>
                 <View className="ml-4">
-                  <Text style={{ fontFamily: "lato-bold" }} className="text-lg">
+                  <Text
+                    style={{ fontFamily: "inter-bold" }}
+                    className="text-xl"
+                  >
                     {data.title}
                   </Text>
                   <Text
@@ -124,8 +130,8 @@ export default MainScreen = () => {
                 </View>
               </View>
               <Text
-                style={{ fontFamily: "inter-semibold" }}
-                className="text-lg text-secondary"
+                style={{ fontFamily: "lato-black" }}
+                className="text-xl text-secondary"
               >
                 {data.amount}
               </Text>
