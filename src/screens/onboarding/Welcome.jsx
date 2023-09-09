@@ -1,8 +1,8 @@
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Image, View, TouchableOpacity } from "react-native";
-import { Intro } from "../components";
-import lock from "../../assets/logos/lock.png";
-import { styles } from "../../global.colors";
+import { Intro } from "../../components";
+import lock from "../../../assets/logos/lock.png";
+import { styles } from "../../../global.colors";
 import { Ionicons } from "@expo/vector-icons";
 import { ActivityIndicator } from "@react-native-material/core";
 import { useState } from "react";

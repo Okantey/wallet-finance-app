@@ -1,8 +1,8 @@
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Text, Image, View } from "react-native";
-import logo from "../../assets/logos/Logo.png";
-import { Button } from "../components";
-import { styles } from "../../global.colors";
+import logo from "../../../assets/logos/Logo.png";
+import { Button } from "../../components";
+import { styles } from "../../../global.colors";
 import { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import "react-native-reanimated";

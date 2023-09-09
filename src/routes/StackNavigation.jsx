@@ -6,6 +6,7 @@ import {
   OnboardingThree,
   Welcome,
   CreateAccount,
+  MainScreen,
 } from "../screens";
 
 const Stack = createNativeStackNavigator();
@@ -15,6 +16,7 @@ const MainStack = () => {
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Onboarding" component={OnBoarding} />
       <Stack.Screen name="RegisterStack" component={RegisterStack} />
+      <Stack.Screen name="HomeStack" component={HomeStack} />
     </Stack.Navigator>
   );
 };
@@ -39,4 +41,12 @@ const RegisterStack = () => {
   );
 };
 
-export { MainStack, OnBoarding, RegisterStack };
+const HomeStack = () => {
+  return (
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="MainScreen" component={MainScreen} />
+    </Stack.Navigator>
+  );
+};
+
+export { MainStack, OnBoarding, RegisterStack, HomeStack };

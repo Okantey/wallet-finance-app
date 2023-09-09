@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { View, Text, ScrollView, TextInput } from "react-native";
-import { Socials } from "../components";
+import { Socials } from "../../components";
 import { Ionicons } from "@expo/vector-icons";
-import { Button } from "../components";
-import { styles } from "../../global.colors";
-export default CreateAccount = () => {
+import { Button } from "../../components";
+import { styles } from "../../../global.colors";
+export default CreateAccount = ({ navigation }) => {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const handleVisibility = () => {
     setPasswordVisible(!passwordVisible);
@@ -83,6 +83,7 @@ export default CreateAccount = () => {
           name="Next"
           bgColor={styles.colors.primary}
           color={styles.colors.white}
+          onPress={() => navigation.navigate("HomeStack")}
         />
       </ScrollView>
     </SafeAreaView>

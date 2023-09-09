@@ -1,8 +1,8 @@
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Text, Image, View } from "react-native";
-import { Intro, Proceed, Skip } from "../components";
-import money from "../../assets/logos/money.png";
-import { styles } from "../../global.colors";
+import { Intro, Proceed, Skip } from "../../components";
+import money from "../../../assets/logos/money.png";
+import { styles } from "../../../global.colors";
 
 export default OnboardingThree = ({ navigation }) => {
   return (

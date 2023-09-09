@@ -1,8 +1,8 @@
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Text, Image, View } from "react-native";
-import { Intro, Proceed, Skip } from "../components";
-import { styles } from "../../global.colors";
-import hands from "../../assets/logos/hands.png";
+import { Intro, Proceed, Skip } from "../../components";
+import { styles } from "../../../global.colors";
+import hands from "../../../assets/logos/hands.png";
 
 export default OnboardingOne = ({ navigation }) => {
   return (
