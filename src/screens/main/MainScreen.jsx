@@ -108,10 +108,10 @@ export default MainScreen = () => {
               className="flex flex-row justify-between items-center"
             >
               <View className="flex flex-row items-center my-1">
-                <View>
+                <View className="bg-white">
                   <Image
                     source={data.logo}
-                    className="w-16 h-14 object-cover rounded-md bg-white mix-blend-color-burn"
+                    className="w-16 h-14 object-cover rounded-md bg-white mix-blend-multiply"
                   />
                 </View>
                 <View className="ml-4">
